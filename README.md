@@ -2,6 +2,7 @@
 
 
 Before you start any actual coding, you must meet with your Squad Leader for ~10 minutes to get your app idea approved. Prepare the following materials _before_ your meeting and put them in your README.md:
+
 - **App Title**: COVID-19 Tracker
 - **App Description**: My app will provide updated COVID-19 statistics regarding confirmed and recovered cases, poppulation, and deaths of each US state. I will incorporate a drop down box prepoppulated with states. I will also use a second API providing dates and cases to produce graphs displaying trends in cases.
 - **API**: https://covid-api.mmediagroup.fr/v1/history?country=UnitedStatesofAmerica&status=deaths : dates and cases trends
@@ -23,9 +24,7 @@ Before you start any actual coding, you must meet with your Squad Leader for ~10
 | Project Pitches           | Monday   | 12/21/2020|
 | Project Deployment        | Tuesday  | 1/05/2021 |
 | Project Presentations     | Tuesday  | 1/05/2021 |
-
 - **Priority Matrix**: 
-
 ![PriorityMatrix](https://i.ibb.co/z4VDmyk/Screen-Shot-2020-12-20-at-11-48-24-PM.png)
 - **Timeframes**: 
   
