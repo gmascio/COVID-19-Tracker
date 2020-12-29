@@ -20,7 +20,6 @@ const getData = async () => {
     console.log(arrStates);
     renderStates(arrStates);
     //renderData(optionValue , axiosData)
-
     //removeStats()
   } catch (error) {
     console.log(error);
@@ -51,6 +50,8 @@ const renderStates = (states) => {
 };
 
 
+
+
 function removeStats() {
   const removeOption = document.querySelector("form");
   while (removeOption.lastChild) {
@@ -58,6 +59,8 @@ function removeStats() {
     removeOption.removeChild(removeOption.lastChild);
   }
 }
+
+
 
 const renderData = (stateValue) => {
   // console.log(stateValue)
