@@ -1,31 +1,38 @@
 body {
-  background-image: url("https://media.giphy.com/media/d0MBCsoypjJ1kDk1SK/giphy.gif")
-  
+background-color: rgb(193, 196, 199);
 }
 h1 {
   font-family: 'Viaoda Libre', cursive;
   font-size: 45px;
   text-align: center;
-  padding-top: 20px;
-  font-weight: 900px;
-  position: relative; 
+  font-weight: 900px; 
+  z-index: 1;
+  position: relative;
+  margin-top: 50px;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  opacity: 0.8;
+  color: rgb(189, 104, 78);
 }
+
 button {
   text-transform: uppercase;
   border: 1px solid black;
-  background-color: #800000;
+  background-color: rgb(189, 104, 78);
   padding: 8px;
   border-radius: 14%;
-  /* margin: 0 auto; */
-  position: absolute; 
+  /* position: absolute;  */
 }
 
 img {
   border-radius: 25px;
-  border: 2px solid #800000;
+  border: 2px solid whitesmoke;
   padding: 10px ;
-  width: 500px ;
-  height: 450px;
+  width: 600px ;
+  height: 400px;
+  position: relative;
+  margin-top: 400px;
+  /* z-index: 2; */
   
   
 }
@@ -43,4 +50,22 @@ img {
 
 #blank {
   line-height: 30px;
+}
+
+#myVideo {
+  position: relative;
+  width: 100% ;
+  height: 100vh ;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  display: flex;
 }

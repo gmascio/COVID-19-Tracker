@@ -66,9 +66,9 @@ const renderData = (stateValue) => {
   let newInfoSection = document.querySelector("#newInfo");
 
   newInfoSection.innerHTML += `
-<p>${state.confirmed}</p>
-<p>${state.deaths}</p>
-<p>${state.recovered}</p>
+<p id="confirmed-cases">Confirmed Cases: ${state.confirmed}</p>
+<p id="confirmed-deaths">Confirmed Deaths: ${state.deaths}</p>
+<p id="deaths">Recovered: ${state.recovered}</p>
  `;
 
   //   console.log(viewData)
