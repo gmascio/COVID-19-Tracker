@@ -16,9 +16,14 @@ const getData = async () => {
 
     //console.log(Object.keys(axiosData))
     const arrStates = Object.keys(axiosData).sort();
+    const USdeaths = axiosData.All.deaths
+    const UScases = axiosData.All.confirmed
+    console.log(USdeaths)
     console.log(response);
     console.log(arrStates);
     renderStates(arrStates);
+    renderDeaths(USdeaths)
+    renderCases (UScases)
     //renderData(optionValue , axiosData)
     //removeStats()
   } catch (error) {
@@ -33,7 +38,9 @@ const value = (e) => {
   //const optionValue = document.querySelector("option")
   let stateSelected = stateOptions.options[stateOptions.selectedIndex].text;
   console.log(stateSelected);
+  removeStats()
   renderData(stateSelected);
+  
 };
 
 const renderStates = (states) => {
@@ -49,11 +56,20 @@ const renderStates = (states) => {
   });
 };
 
+const renderDeaths = (death) => {
+  let deathStats = document.querySelector("#deathnumber");
+  deathStats.innerText = `${death}`;
 
+}
+
+const renderCases = (cases) => {
+  let casesStats = document.querySelector("#casenumber")
+  casesStats.innerHTML= `${cases}`;
+}
 
 
 function removeStats() {
-  const removeOption = document.querySelector("form");
+  const removeOption = document.querySelector("#newInfo");
   while (removeOption.lastChild) {
     console.log(removeOption.lastChild);
     removeOption.removeChild(removeOption.lastChild);
