@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas id="myChart"></canvas>
+    <script>
+      const deathUrl =
+        "https://covid-api.mmediagroup.fr/v1/history?country=UnitedStatesofAmerica&status=deaths";
+      const getData = async () => {
+        try {
+          const headers = {
+            headers: {
+              "Access-Control-Allow-Origin": "*",
+            },
+          };
+          const response = await axios.get(deathUrl, headers);
+          //axiosData = response.data;
+
+          console.log(response);
+          const dates = response.data.US.All.dates;
+          console.log(dates);
+          drawChart(dates)
+
+          //renderData(optionValue , axiosData)
+          //removeStats()
+        } catch (error) {
+          console.log(error);
+        }
+      };
+      getData();
+
+      const drawChart = (dates) => {
+        const labels = Object.keys(dates).reverse()
+        const data = Object.values(dates).reverse()
+        var ctx = document.getElementById("myChart").getContext("2d");
+        var chart = new Chart(ctx, {
+          // The type of chart we want to create
+          type: "line",
+
+          // The data for our dataset
+          data: {
+            labels: [
+             ...labels
+            ],
+            datasets: [
+              {
+                label: "My First dataset",
+                backgroundColor: "rgb(255, 99, 132)",
+                borderColor: "rgb(255, 99, 132)",
+                data: [...data],
+              },
+            ],
+          },
+
+          // Configuration options go here
+          options: {},
+        });
+      };
+    </script>
+  </body>
+</html>
