@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   <script defer src="./app.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
   <title>COVID-19 Tracker</title>
@@ -48,6 +49,19 @@
   </h3>
   <p id= "fact2"> The advent of COVID-19 has brought to light the gross racial disparities in healthcare access. Black, Indigenous, and Latino Americans experience the highest death tolls from the virus.   </p>
 </div>
+ <!-- Received syntax for charts from https://www.chartjs.org/docs/latest/getting-started/ -->
+ <div class="chartContainer">
+ <canvas id="myChart" ></canvas>
+ </div>
+ <h4>A Glimpse of the Progression of COVID-19</h4>
+ <div class="gallery">
+   <img src="https://i.ibb.co/611DfTY/covid1.png" alt="covid1" border="0"></a>
+   <img src="https://i.ibb.co/KwZvSrJ/covid2.jpg" alt="covid2" border="0"></a>
+   <img src="https://i.ibb.co/mG35ZCW/covid3.jpg" alt="covid3" border="0"></a>
+   <img src="https://i.ibb.co/hdML3Hn/covid4.jpg" alt="covid4" border="0"></a">
+ </div>
+ <script src="covidChart.js">
+ </script>
 <footer>
     <p>Author: Ghelila Mascio<br>
     <a href="https://www.linkedin.com/in/ghelilamascio/">Contact Me on LinkedIn</a></p>

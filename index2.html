@@ -8,6 +8,7 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- Received syntax for charts from https://www.chartjs.org/docs/latest/getting-started/ -->
     <canvas id="myChart"></canvas>
     <script>
       const deathUrl =
@@ -27,8 +28,7 @@
           console.log(dates);
           drawChart(dates)
 
-          //renderData(optionValue , axiosData)
-          //removeStats()
+          
         } catch (error) {
           console.log(error);
         }
@@ -50,7 +50,7 @@
             ],
             datasets: [
               {
-                label: "My First dataset",
+                label: "Confirmed Cases of COVID-19 in the US",
                 backgroundColor: "rgb(255, 99, 132)",
                 borderColor: "rgb(255, 99, 132)",
                 data: [...data],
