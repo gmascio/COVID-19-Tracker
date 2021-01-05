@@ -1,4 +1,5 @@
 
+//API Call 2: sorts through dates and corresponding cases
 const deathUrl =
 "https://covid-api.mmediagroup.fr/v1/history?country=UnitedStatesofAmerica&status=deaths";
 const getData2 = async () => {

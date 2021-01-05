@@ -14,7 +14,7 @@ Before you start any actual coding, you must meet with your Squad Leader for ~10
     
 - **Wireframes**: Initial Wireframe: ![WireFrame](https://i.ibb.co/mHNQr0V/Screen-Shot-2020-12-20-at-11-30-15-PM.png")
   [https://wireframe.cc/pro/pp/71da09165404037]
-  Updated Wireframe: 
+  Updated Wireframe: \
   ![WireFrame](https://i.ibb.co/rxcgN00/Screen-Shot-2021-01-05-at-9-45-09-AM.png)
   [https://wireframe.cc/PTTS5R]
 - **MVP**: Incorporate CSS flexbox to syle my HTML frame, and use JavaScript to alter responsiveness/style. Request information from an API using two different API end points to gather information about COVID-19 trends and history. I hope to manipualate my initial API request to feed a dropdown box of states as well as populate sections of the page with updated, pertinent statistics. My second API endpoint will be manipulated to render dates and confirmed COVID-19 cases into a dynamic line graph.  I plan to include mediaqueries to enhance the responsiveness of the website.
@@ -39,3 +39,7 @@ Before you start any actual coding, you must meet with your Squad Leader for ~10
 | Working with CSS | H | 10 hrs | 4hrs | 4hrs |
 | Assembling graphs | L | 10 hrs | 3hrs | 3hrs |
 | Total | H | 47hrs| 18.5hrs | 18.5hrs |
+
+- **Code-Snippet**: 
+  Attached below is a chart I poppulated with an API call, using chart.js documentation. Order of data and labels was reversed to produce an ascending chronological order.
+![CodeSnippet](https://i.ibb.co/zmhWx4z/chart-Snippet.png)
