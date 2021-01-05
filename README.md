@@ -30,9 +30,9 @@ Before you start any actual coding, you must meet with your Squad Leader for ~10
   
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | ---: |
-| Adding Search Bar | M | 3hrs| --hrs | --hrs |
-| Molding HTML Backbone | H | 10hrs | --hrs | --hrs|
-| Working with API | H | 25 hrs| --hrs | --hrs |
-| Working with CSS | H | 10 hrs | --hrs | --hrs |
-| Assembling graphs | L | 10 hrs | --hrs | --hrs |
-| Total | H | 47hrs| --hrs | --hrs |
+| Adding Search Bar | M | 3hrs| 1.5hrs | 1.5hrs |
+| Molding HTML Backbone | H | 10hrs | 3hhrs | 3hrs|
+| Working with API | H | 25 hrs| 7hrs | 7hrs |
+| Working with CSS | H | 10 hrs | 4hrs | 4hrs |
+| Assembling graphs | L | 10 hrs | 3hrs | 3hrs |
+| Total | H | 47hrs| 18.5hrs | 18.5hrs |

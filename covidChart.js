@@ -10,7 +10,6 @@ try {
   };
   const response = await axios.get(deathUrl, headers);
   const dates = response.data.US.All.dates;
-  console.log(dates);
   drawChart(dates)
 
 } catch (error) {
