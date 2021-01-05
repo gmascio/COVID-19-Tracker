@@ -12,10 +12,13 @@ Before you start any actual coding, you must meet with your Squad Leader for ~10
   ![APISNIPPET](https://i.ibb.co/52Jq5Bw/Screen-Shot-2020-12-20-at-11-54-16-PM.png)    
     
     
-- **Wireframes**:  ![WireFrame](https://i.ibb.co/mHNQr0V/Screen-Shot-2020-12-20-at-11-30-15-PM.png")
+- **Wireframes**: Initial Wireframe: ![WireFrame](https://i.ibb.co/mHNQr0V/Screen-Shot-2020-12-20-at-11-30-15-PM.png")
   [https://wireframe.cc/pro/pp/71da09165404037]
-- **MVP**: Incorporate CSS flexbox to syle my HTML frame, and use JavaScript to alter responsiveness/style. Request information from an API using two different API end points to gather information about COVID-19 trends and history. I hope to manipualate my API request to feed a dropdown box of states as well as populate sections of the page with updated, pertinent statistics. Include atleast one mediaquery to enhance responsiveness.
-- **Post-MVP**: I hope to also experiment with the longitude and latitude points given to create a map with relative COVID-19 trends.
+  Updated Wireframe: 
+  ![WireFrame](https://i.ibb.co/rxcgN00/Screen-Shot-2021-01-05-at-9-45-09-AM.png)
+  [https://wireframe.cc/PTTS5R]
+- **MVP**: Incorporate CSS flexbox to syle my HTML frame, and use JavaScript to alter responsiveness/style. Request information from an API using two different API end points to gather information about COVID-19 trends and history. I hope to manipualate my initial API request to feed a dropdown box of states as well as populate sections of the page with updated, pertinent statistics. My second API endpoint will be manipulated to render dates and confirmed COVID-19 cases into a dynamic line graph.  I plan to include mediaqueries to enhance the responsiveness of the website.
+- **Post-MVP**: I hope to experiment with the longitude and latitude points given to create a map with relative COVID-19 trends.
 - **Goals**:
    
 | Project 1 Important Dates | Day      | Date      |
@@ -31,7 +34,7 @@ Before you start any actual coding, you must meet with your Squad Leader for ~10
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | ---: |
 | Adding Search Bar | M | 3hrs| 1.5hrs | 1.5hrs |
-| Molding HTML Backbone | H | 10hrs | 3hhrs | 3hrs|
+| Molding HTML Backbone | H | 10hrs | 3hrs | 3hrs|
 | Working with API | H | 25 hrs| 7hrs | 7hrs |
 | Working with CSS | H | 10 hrs | 4hrs | 4hrs |
 | Assembling graphs | L | 10 hrs | 3hrs | 3hrs |
