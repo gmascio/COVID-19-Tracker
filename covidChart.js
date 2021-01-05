@@ -1,4 +1,4 @@
-//I received syntax for Chart.js from https://www.chartjs.org/docs/latest/getting-started/
+
 const deathUrl =
 "https://covid-api.mmediagroup.fr/v1/history?country=UnitedStatesofAmerica&status=deaths";
 const getData2 = async () => {
@@ -9,7 +9,6 @@ try {
     },
   };
   const response = await axios.get(deathUrl, headers);
-  //axiosData = response.data;
 
   console.log(response);
   const dates = response.data.US.All.dates;
@@ -23,6 +22,7 @@ try {
 };
 getData2();
 
+////I received syntax for Chart.js from https://www.chartjs.org/docs/latest/getting-started/
 const drawChart = (dates) => {
 const labels = Object.keys(dates).reverse()
 const data = Object.values(dates).reverse()

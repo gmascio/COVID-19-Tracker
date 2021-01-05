@@ -1,8 +1,7 @@
 const URL = "https://covid-api.mmediagroup.fr/v1//cases?country=US";
-//const optionValue = document.querySelector("option").value
-// console.log(optionValue)
 let axiosData = [];
 let div = document.querySelector(".searchbar");
+
 //I received syntax for Chart.js from https://www.chartjs.org/docs/latest/getting-started/
 const getData = async () => {
   try {
@@ -11,25 +10,19 @@ const getData = async () => {
         "Access-Control-Allow-Origin": "*",
       },
     };
+    
     const response = await axios.get(URL, headers);
     axiosData = response.data;
-
-    //console.log(Object.keys(axiosData))
     const arrStates = Object.keys(axiosData).sort();
     const USdeaths = axiosData.All.deaths
-    console.log(axiosData.All)
     const deathNum = USdeaths.toString()
-    console.log(typeof deathNum)
     const UScases = axiosData.All.confirmed
     const caseNum = UScases.toString()
-    console.log(USdeaths)
-    console.log(response);
-    console.log(arrStates);
+  
     renderStates(arrStates);
     renderDeaths(deathNum)
     renderCases (caseNum)
-    //renderData(optionValue , axiosData)
-    //removeStats()
+    
   } catch (error) {
     console.log(error);
   }
@@ -39,37 +32,34 @@ getData();
 const value = (e) => {
   e.preventDefault();
   let stateOptions = document.querySelector("select");
-  //const optionValue = document.querySelector("option")
   let stateSelected = stateOptions.options[stateOptions.selectedIndex].text;
   console.log(stateSelected);
   removeStats()
   renderData(stateSelected);
-  
 };
 
+//Producing a dropdown option with all listed states pulled from an API 
 const renderStates = (states) => {
   let stateOptions = document.querySelector("select");
-  //console.log(stateOptions)
 
   states.forEach((state) => {
     const newOption = document.createElement("option");
     newOption.innerText = `${state}`;
     newOption.value = `${state}`;
-    //console.log(newOption.value)
     stateOptions.appendChild(newOption);
   });
 };
 
+//Calling API to render number for total US COVID-19 death cases while incorporating an algorithm to include commas in relevant positions
 const renderDeaths = (death) => {
   let deathStats = document.querySelector("#deathnumber");
   const deathArray = death.split("")
     deathArray.splice(3,0,",")
-   deathNum = deathArray.join("")
-   // console.log(deathSeperated)
+    deathNum = deathArray.join("")
     deathStats.innerText = `${deathNum}`;
-  //}  
 }
 
+////Calling API to render number for total US COVID-19 confirmed cases while incorporating an algorithm to include commas in relevant positions
 const renderCases = (cases) => {
   let casesStats = document.querySelector("#casenumber")
   console.log(cases)
@@ -81,7 +71,7 @@ const renderCases = (cases) => {
   casesStats.innerHTML= `${fullNumber}`;
 }
 
-
+//Removing previous submit data
 function removeStats() {
   const removeOption = document.querySelector("#newInfo");
   while (removeOption.lastChild) {
@@ -91,10 +81,8 @@ function removeStats() {
 }
 
 
-
+//Rendering data from initial API endpoint to produce COVID statistics for each state
 const renderData = (stateValue) => {
-  // console.log(stateValue)
-  // console.log(axiosData[stateValue])
   let state = axiosData[stateValue];
   let newInfoSection = document.querySelector("#newInfo");
 
@@ -103,8 +91,6 @@ const renderData = (stateValue) => {
 <p id="confirmed-deaths">Confirmed Deaths: ${state.deaths}</p>
 <p id="deaths">Recovered: ${state.recovered}</p>
  `;
-
-  //   console.log(viewData)
 };
 
 const form = document.querySelector("form");
