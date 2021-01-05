@@ -150,10 +150,10 @@ margin-top: 40px;
 
 @media(max-width:450px) {
   .section h1 , h2, h3 {
-    font-size: 25px;
+    font-size: 20px;
   }
   #fact1 , #fact2 {
-    font-size: 16px;
+    font-size: 15px;
   }
   .section{
     height: 50vh
