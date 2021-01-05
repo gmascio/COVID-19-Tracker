@@ -1,3 +1,4 @@
+//I received syntax for Chart.js from https://www.chartjs.org/docs/latest/getting-started/
 const deathUrl =
 "https://covid-api.mmediagroup.fr/v1/history?country=UnitedStatesofAmerica&status=deaths";
 const getData2 = async () => {
@@ -27,10 +28,10 @@ const labels = Object.keys(dates).reverse()
 const data = Object.values(dates).reverse()
 var ctx = document.getElementById("myChart").getContext("2d");
 var chart = new Chart(ctx, {
-  // The type of chart we want to create
+  // The type of chart I want to create
   type: "line",
 
-  // The data for our dataset
+  // The data for my dataset
   data: {
     labels: [
      ...labels

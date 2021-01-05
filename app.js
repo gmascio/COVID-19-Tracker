@@ -3,7 +3,7 @@ const URL = "https://covid-api.mmediagroup.fr/v1//cases?country=US";
 // console.log(optionValue)
 let axiosData = [];
 let div = document.querySelector(".searchbar");
-
+//I received syntax for Chart.js from https://www.chartjs.org/docs/latest/getting-started/
 const getData = async () => {
   try {
     const headers = {
@@ -58,8 +58,8 @@ const renderStates = (states) => {
 
 const renderDeaths = (death) => {
   let deathStats = document.querySelector("#deathnumber");
-  deathStats.innerText = `${death}`;
-
+    deathStats.innerText = `${death}`;
+    
 }
 
 const renderCases = (cases) => {
