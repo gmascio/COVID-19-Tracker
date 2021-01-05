@@ -14,7 +14,7 @@ Initial Wireframe:
 [https://wireframe.cc/pro/pp/71da09165404037] ![WireFrame](https://i.ibb.co/mHNQr0V/Screen-Shot-2020-12-20-at-11-30-15-PM.png")
    
   Updated Wireframe:  
-   [https://wireframe.cc/PTTS5R]
+  [https://wireframe.cc/PTTS5R]  
   ![WireFrame](https://i.ibb.co/rxcgN00/Screen-Shot-2021-01-05-at-9-45-09-AM.png)
   
 - **MVP**: Incorporate CSS flexbox to syle my HTML frame, and use JavaScript to alter responsiveness/style. Request information from an API using two different API end points to gather information about COVID-19 trends and history. I hope to manipualate my initial API request to feed a dropdown box of states as well as populate sections of the page with updated, pertinent statistics. My second API endpoint will be manipulated to render dates and confirmed COVID-19 cases into a dynamic line graph.  I plan to include mediaqueries to enhance the responsiveness of the website.
