@@ -17,13 +17,17 @@ const getData = async () => {
     //console.log(Object.keys(axiosData))
     const arrStates = Object.keys(axiosData).sort();
     const USdeaths = axiosData.All.deaths
+    console.log(axiosData.All)
+    const deathNum = USdeaths.toString()
+    console.log(typeof deathNum)
     const UScases = axiosData.All.confirmed
+    const caseNum = UScases.toString()
     console.log(USdeaths)
     console.log(response);
     console.log(arrStates);
     renderStates(arrStates);
-    renderDeaths(USdeaths)
-    renderCases (UScases)
+    renderDeaths(deathNum)
+    renderCases (caseNum)
     //renderData(optionValue , axiosData)
     //removeStats()
   } catch (error) {
@@ -58,13 +62,23 @@ const renderStates = (states) => {
 
 const renderDeaths = (death) => {
   let deathStats = document.querySelector("#deathnumber");
-    deathStats.innerText = `${death}`;
-    
+  const deathArray = death.split("")
+    deathArray.splice(3,0,",")
+   deathNum = deathArray.join("")
+   // console.log(deathSeperated)
+    deathStats.innerText = `${deathNum}`;
+  //}  
 }
 
 const renderCases = (cases) => {
   let casesStats = document.querySelector("#casenumber")
-  casesStats.innerHTML= `${cases}`;
+  console.log(cases)
+  const caseArray = cases.split("")
+  caseArray.splice(2, 0, ",")
+  caseArray.splice(6, 0, ",")
+  const fullNumber = caseArray.join("")
+  console.log(caseArray)
+  casesStats.innerHTML= `${fullNumber}`;
 }
 
 
