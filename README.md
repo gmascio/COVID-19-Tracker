@@ -41,5 +41,5 @@ Initial Wireframe:
 | Total | H | 47hrs| 18.5hrs | 18.5hrs |
 
 - **Code-Snippet**: 
-  Attached below is a chart I poppulated with an API call, using chart.js documentation. Order of data and labels was reversed to produce data of an ascending chronological order.
+  Attached below is a chart I populated with an API call, using chart.js documentation. Order of data and labels was reversed to produce data of an ascending chronological order.
 ![CodeSnippet](https://i.ibb.co/zmhWx4z/chart-Snippet.png)
