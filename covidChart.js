@@ -9,13 +9,10 @@ try {
     },
   };
   const response = await axios.get(deathUrl, headers);
-
-  console.log(response);
   const dates = response.data.US.All.dates;
   console.log(dates);
   drawChart(dates)
 
-  
 } catch (error) {
   console.log(error);
 }
@@ -26,8 +23,8 @@ getData2();
 const drawChart = (dates) => {
 const labels = Object.keys(dates).reverse()
 const data = Object.values(dates).reverse()
-var ctx = document.getElementById("myChart").getContext("2d");
-var chart = new Chart(ctx, {
+  var ctx = document.getElementById("myChart").getContext("2d");
+  var chart = new Chart(ctx, {
   // The type of chart I want to create
   type: "line",
 
