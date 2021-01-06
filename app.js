@@ -89,7 +89,7 @@ const renderData = (stateValue) => {
   newInfoSection.innerHTML += `
 <p id="confirmed-cases">Confirmed Cases: ${state.confirmed}</p>
 <p id="confirmed-deaths">Confirmed Deaths: ${state.deaths}</p>
-<p id="deaths">Recovered: ${state.recovered}</p>
+<p id="recovered">Recovered: ${state.recovered}</p>
  `;
 };
 
