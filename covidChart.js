@@ -1,7 +1,7 @@
 
 //API Call 2: sorts through dates and corresponding cases
 const deathUrl =
-"http://cors-anywhere.herokuapp.com/http://covid-api.mmediagroup.fr/v1/history?country=UnitedStatesofAmerica&status=deaths";
+"https://cors-anywhere.herokuapp.com/https://covid-api.mmediagroup.fr/v1/history?country=UnitedStatesofAmerica&status=deaths";
 const getData2 = async () => {
 try {
   const headers = {
