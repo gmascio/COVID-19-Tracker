@@ -1,6 +1,6 @@
 # Project #1: COVID-19 Tracker
 
---**Deployment:** https://thevidtracker.netlify.app/
+- **Deployment:** https://thevidtracker.netlify.app/
 - **App Title**: COVID-19 Tracker
 - **App Description**: My app will provide updated COVID-19 statistics regarding confirmed and recovered cases, poppulation, and deaths of each US state. I will incorporate a drop down box prepoppulated with states. I will also use a second API providing dates and cases to produce graphs displaying trends in cases.
 - **API**: https://covid-api.mmediagroup.fr/v1/history?country=UnitedStatesofAmerica&status=deaths : dates and cases trends
