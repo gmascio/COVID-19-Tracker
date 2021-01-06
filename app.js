@@ -1,4 +1,4 @@
-const URL = "https://covid-api.mmediagroup.fr/v1//cases?country=US";
+const URL = 'http://cors-anywhere.herokuapp.com/http://covid-api.mmediagroup.fr/v1/cases?country=US';
 let axiosData = [];
 let div = document.querySelector(".searchbar");
 
